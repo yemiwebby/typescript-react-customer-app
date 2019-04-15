@@ -1,22 +1,13 @@
 {
-    "customers": [
-        {
-            "_id": 1,
-            "first_name": "Olususi",
-            "last_name": "Oluyemi",
-            "email": "yemiwebby@gmail.com",
-            "phone": "+2348066417364",
-            "address": "Federal capital territory Abuja",
-            "description": "This is a simple description"
-        },
-        {
-            "_id": 2,
-            "first_name": "Kathryn",
-            "last_name": "Hancox",
-            "email": "khancox@do.com",
-            "phone": "+2348066417364",
-            "address": "Federal capital territory Abuja",
-            "description": "A wonderful technical content editor "
-        }
-    ]
+  "customers": [
+    {
+      "id": 1,
+      "first_name": "Olususi",
+      "last_name": "Oluyemi",
+      "email": "yemiwebby@gmail.com",
+      "phone": "+2348066417364",
+      "address": "Federal capital territory Abuja",
+      "description": "This is a simple description"
+    }
+  ]
 }
