@@ -10,17 +10,13 @@ interface IState {
 export default class Home extends React.Component<{} & RouteComponentProps, IState> {
     constructor(props: any) {
         super(props);
-
         this.state = { customers: [] }
     }
 
-    public async componentDidMount(): Promise<any> {
+    public componentDidMount(): void {
         axios.get(`http://localhost:5000/customers`).then(data => {
             this.setState({ customers: data.data })
         })
-        // const response = await fetch('/blog/posts');
-        // const json = await response.json();
-        // this.setState({ data: json })
     }
 
     public deleteCustomer(id: number) {
@@ -28,14 +24,6 @@ export default class Home extends React.Component<{} & RouteComponentProps, ISta
             this._removePostFromView(id);
             this.props.history.push('/');
         })
-        // await fetch(`/blog/delete?postID=${id}`, {
-        //     method: "delete",
-        //     headers: new Headers({
-        //         "Content-Type": "application/json",
-        //         Accept: "application/json",
-        //         "authorization": `Bearer ${auth0Client.getIdToken()}`
-        //     })
-        // });
     }
 
     private _removePostFromView(id: number): void {

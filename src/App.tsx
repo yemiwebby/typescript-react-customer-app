@@ -3,7 +3,7 @@ import './App.css';
 import { Switch, Route, withRouter, RouteComponentProps, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Create from './components/customer/Create';
-import Edit from './components/customer/Edit';
+import EditCustomer from './components/customer/Edit';
 
 
 class App extends React.Component<{} & RouteComponentProps<any>> {
@@ -25,7 +25,7 @@ class App extends React.Component<{} & RouteComponentProps<any>> {
         <Switch>
           <Route path={'/'} exact component={Home} />
           <Route path={'/create'} exact component={Create} />
-          <Route path={'/edit/:id'} exact component={Edit} />
+          <Route path={'/edit/:id'} exact component={EditCustomer} />
         </Switch>
       </div>
     );

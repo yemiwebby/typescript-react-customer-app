@@ -8,6 +8,15 @@
       "phone": "+2348066417364",
       "address": "Federal capital territory Abuja",
       "description": "This is a simple description"
+    },
+    {
+      "description": "A very lovely and incredible technical content editor",
+      "id": 2,
+      "first_name": "Kathryn",
+      "last_name": "Hancox",
+      "email": "khancox@do.com",
+      "phone": "8066417364",
+      "address": "73 coker road Ilupeju"
     }
   ]
 }

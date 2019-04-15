@@ -34,7 +34,7 @@ class Create extends React.Component<{} & RouteComponentProps, IFormState> {
         }
     }
 
-    private processFormSubmission = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+    private processFormSubmission = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
         this.setState({ loading: true });
 
@@ -47,14 +47,8 @@ class Create extends React.Component<{} & RouteComponentProps, IFormState> {
             description: this.state.description,
         }
 
-
-        // const submitSuccess: boolean = await this.submitForm(formData);
         this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
         this.postResultToServer(formData);
-
-        // setTimeout(() => {
-        //     this.props.history.push('/');
-        // }, 1500)
     }
 
     private postResultToServer(formData: {}) {
@@ -64,23 +58,6 @@ class Create extends React.Component<{} & RouteComponentProps, IFormState> {
             }, 1500)
         ]);
     }
-    // private async submitForm(formData: {}) {
-    //     try {
-    //         const response = await axios.post(`http://localhost:5000/customers`, formData)
-    // const response = await fetch('/blog/post', {
-    //     method: "post",
-    //     headers: new Headers({
-    //         "Content-Type": "application/json",
-    //         "Accept": "application/json",
-    //         "authorization": `Bearer ${auth0Client.getIdToken()}`
-    //     }),
-    //     body: JSON.stringify(formData)
-    // });
-    //         return response.status.;
-    //     } catch (ex) {
-    //         return false;
-    //     }
-    // }
 
     private handleInputChanges = (e: React.FormEvent<HTMLInputElement>) => {
         e.preventDefault();
