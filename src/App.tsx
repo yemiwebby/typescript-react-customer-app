@@ -6,7 +6,7 @@ import Create from './components/customer/Create';
 import EditCustomer from './components/customer/Edit';
 
 
-class App extends React.Component<{} & RouteComponentProps<any>> {
+class App extends React.Component<RouteComponentProps<any>> {
   public render() {
     return (
       <div>

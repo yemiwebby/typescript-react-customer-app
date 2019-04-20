@@ -18,7 +18,7 @@ export interface IFormState {
     loading: boolean;
 }
 
-class Create extends React.Component<{} & RouteComponentProps, IFormState> {
+class Create extends React.Component<RouteComponentProps, IFormState> {
     constructor(props: any) {
         super(props);
         this.state = {
