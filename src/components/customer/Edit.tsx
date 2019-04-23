@@ -15,7 +15,7 @@ export interface IFormState {
 }
 
 class EditCustomer extends React.Component<RouteComponentProps<any>, IFormState> {
-    constructor(props: any) {
+    constructor(props: RouteComponentProps) {
         super(props);
         this.state = {
             id: this.props.match.params.id,

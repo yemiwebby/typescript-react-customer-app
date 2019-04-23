@@ -19,7 +19,7 @@ export interface IFormState {
 }
 
 class Create extends React.Component<RouteComponentProps, IFormState> {
-    constructor(props: any) {
+    constructor(props: RouteComponentProps) {
         super(props);
         this.state = {
             first_name: '',
