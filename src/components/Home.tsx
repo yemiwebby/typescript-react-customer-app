@@ -21,14 +21,10 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
 
     public deleteCustomer(id: number) {
         axios.delete(`http://localhost:5000/customers/${id}`).then(data => {
-            this._removePostFromView(id);
+            const index = this.state.customers.findIndex(customer => customer.id === id);
+            this.state.customers.splice(index, 1);
             this.props.history.push('/');
         })
-    }
-
-    private _removePostFromView(id: number): void {
-        const index = this.state.customers.findIndex(customer => customer.id === id);
-        this.state.customers.splice(index, 1);
     }
 
     public render() {

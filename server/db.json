@@ -2,21 +2,21 @@
   "customers": [
     {
       "id": 1,
-      "first_name": "Olususi",
-      "last_name": "Damilola",
-      "email": "yemiwebby@gmail.com",
-      "phone": "+2348066417364",
-      "address": "Federal capital territory Abuja",
-      "description": "This is a simple description"
+      "first_name": "Customer_1",
+      "last_name": "Customer_1",
+      "email": "customer1@mail.com",
+      "phone": "00000000000",
+      "address": "Customer_1 Address",
+      "description": "Customer_1 description"
     },
     {
-      "description": "A very lovely and incredible technical content editor",
       "id": 2,
-      "first_name": "Kathryn",
-      "last_name": "Hancox",
-      "email": "khancox@do.com",
-      "phone": "8066417364",
-      "address": "73 coker road Ilupeju"
+      "first_name": "Customer_2",
+      "last_name": "Customer_2",
+      "email": "customer2@mail.com",
+      "phone": "00000000000",
+      "address": "Customer_2 Adress",
+      "description": "Customer_2 Description"
     }
   ]
 }
