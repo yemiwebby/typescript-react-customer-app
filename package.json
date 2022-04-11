@@ -9,6 +9,7 @@
     "@types/react-dom": "16.8.4",
     "@types/react-router-dom": "^4.3.2",
     "axios": "^0.18.0",
+    "keycloak-js": "^17.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",

@@ -34,7 +34,7 @@ class Create extends React.Component<RouteComponentProps, IFormState> {
         }
     }
 
-    private processFormSubmission = (e: React.FormEvent<HTMLFormElement>): void => {
+    private processFormSubmission: (e: React.FormEvent<HTMLFormElement>) => void = (e: React.FormEvent<HTMLFormElement>): void => {
         e.preventDefault();
         this.setState({ loading: true });
 

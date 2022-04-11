@@ -4,7 +4,7 @@
       "id": 1,
       "first_name": "Customer_1",
       "last_name": "Customer_1",
-      "email": "customer1@mail.com",
+      "email": "customer1@bcp.com",
       "phone": "00000000000",
       "address": "Customer_1 Address",
       "description": "Customer_1 description"
@@ -13,7 +13,7 @@
       "id": 2,
       "first_name": "Customer_2",
       "last_name": "Customer_2",
-      "email": "customer2@mail.com",
+      "email": "customer2@bcp.com",
       "phone": "00000000000",
       "address": "Customer_2 Adress",
       "description": "Customer_2 Description"

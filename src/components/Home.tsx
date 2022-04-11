@@ -14,13 +14,14 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
     }
 
     public componentDidMount(): void {
-        axios.get(`http://localhost:5000/customers`).then(data => {
+        // @ts-ignore
+        axios.get(`http://localhost:3100/customers`).then(data => {
             this.setState({ customers: data.data })
         })
     }
 
     public deleteCustomer(id: number) {
-        axios.delete(`http://localhost:5000/customers/${id}`).then(data => {
+        axios.delete(`http://localhost:3100/customers/${id}`).then(data => {
             const index = this.state.customers.findIndex(customer => customer.id === id);
             this.state.customers.splice(index, 1);
             this.props.history.push('/');
@@ -33,7 +34,7 @@ export default class Home extends React.Component<RouteComponentProps, IState> {
             <div>
                 {customers.length === 0 && (
                     <div className="text-center">
-                        <h2>No customer found at the moment</h2>
+                        <h2>Pas d'applications disponibles pour le moment</h2>
                     </div>
                 )}
 
